@@ -1,0 +1,41 @@
+{
+    "name": "decorus-kazuma/pest-plugin-given-when-then",
+    "description": "Given, When, Then.",
+    "keywords": [
+        "php",
+        "pest",
+        "pestphp",
+        "testing"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kazuma Itou",
+            "email": "brightdelusion@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist"
+    },
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "pestphp/pest": "^0.3"
+    },
+    "require-dev": {
+        "pestphp/pest-dev-tools": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "PestExtensions\\GivenWhenThen\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
